@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converting Data Type</title>
+    <style>
+        .tag{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h1>* Converting Data Types</h1>
+    <h2> <u>1st Conversion : Number to String</u></h2>
+    <img style="width: 100%; height: 100%;" src="conversionandcomparison/firstconversion.png" alt="">
+
+    <h2> <u>2nd Conversion : String to Number</u></h2>
+    <img style="width: 100%; height: 100%;" src="conversionandcomparison/secondcomparison.png" alt="">
+
+    <h3>2.1 Special Case</h3>
+    <p class="tag">If a string contains both numbers and letters in it and if we try to convert the string to number the result comes out to be <b>NaN that is Not a Number</b></p>
+
+    <img style="width: 100%; height: 100%;" src="conversionandcomparison/thirdconversion.png" alt="">
+
+    <h2> <u>3rd Conversion : String to Boolean</u></h2>
+    <p>Empty String = False <br>
+       Non-empty String = True</p>
+       <img style="width: 100%; height: 100%;" src="conversionandcomparison/fourthcomparison.png" alt="">
+
+       <hr>
+       <h1>* Comparison Examples</h1>
+       <img style="width: 100%; height: 100%;" src="conversionandcomparison/fifthcomparison.png" alt="">
+       <p class="tag"> '===' '==' and '>=' operators work differently with null . Null is not equal to 0 but gives true when it comes to '>='.</p>
+
+
+
+    <script>
+        // 2 "CONVERSION EXAMPLE"
+// num to string
+// let num = 5
+// let convertedTOString = String(num)
+// console.log(convertedTOString);
+// console.log(typeof(convertedTOString));
+
+// // string to num
+// let str = "6"
+// let convertedToNum = Number(str)
+// console.log(convertedToNum);
+// console.log(typeof(convertedToNum));
+
+// // next case
+// let nextstr = "6aa"
+// let againConvert = Number(nextstr)
+// console.log(againConvert);
+
+// //string to boolean
+// let str1 = ""
+// let str2 = "hello"
+// let str1convert = Boolean(str1)
+// let str2convert = Boolean(str2)
+// console.log(str1convert);
+// console.log(str2convert);
+
+// 3 "COMPARISON EXAMPLE"
+console.log(4 >= '3');
+console.log(2 == '2');
+console.log('2' >= '2');
+console.log('2' == 2);
+console.log(null == 0);
+console.log(null >=0);
+console.log(null < 0);
+console.log(null >= '0');
+console.log(null === 0);
+console.log('2' === 2);
+
+    </script>
+</body>
+</html>
