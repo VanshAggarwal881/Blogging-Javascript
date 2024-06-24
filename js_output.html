@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .spanclass{
+            font-size: larger;
+            margin-top: 15px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Display data in many ways:</h1>
+    <h2> <u> 1. By innerHTML</u></h2>
+
+    <img style="width: 100%; height: 200px;" src="js_outputimg/innerhtml.png" alt="">
+
+    <span class="spanclass">display the text :</span>
+
+    <u><span class="spanclass" id="ptag"> </span></u>
+
+    <h2> <u> 2. By document.write()</u></h2>
+
+    <u><span class="spanclass">use document.write() for testing purposes only , as calling the document.write() after the whole html is loaded will overwrite the html document.</span></u> <br>
+     <h3>Example of document.write() </h3>
+
+     <button onclick="document.write(`the whole html document is overwritten by me`)">try me</button>
+
+     <hr>
+
+     <h2> <u> 3. By Window.Alert()</u></h2>
+
+     <img style="width: 100%; height: 100px;" src="js_outputimg/document_write.png" alt="">
+
+     <button onclick="window.alert('3. Another form of javascript display')">try me</button>
+
+     <hr>
+
+     <h2> <u> 4. By console log</u></h2>
+
+     <p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<h2> <u> 5. Javascript Print</u></h2>
+
+<button onclick="window.print()">Print this page</button>
+
+    
+
+
+
+
+
+
+
+    <script>
+
+       document.getElementById("ptag").innerHTML = "underlined text after colon using innerHTML."
+       
+    // document.write("this text is in javascript , javascript displaying text using document .write , 3. form is window.alert , when the html document is run on the browser the window pop up appears")
+       
+
+    //    alert('3. Another form of javascript display')
+    </script>
+</body>
+</html>
