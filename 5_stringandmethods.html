@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String and its Methods</h1>
+    <img style="height: 100%; width: 100%;" src="stringimg/string1.png" alt="">
+    <p style="border: 1px solid black;">Note : charCodeAt() is UTF-16, codePointAt() is Unicode.
+
+        charCodeAt() returns a number between 0 and 65535.
+        <br>
+        Both methods return an integer representing the UTF-16 code of a character, but only codePointAt() can return the full value of a Unicode value greather 0xFFFF (65535).
+        </p>
+
+        
+        <h2>Concatenating two strings</h2>
+        <img  style="height: 100%; width: 100%;" src="stringimg/concat.png" alt="">
+
+        <p style="border: 1px solid black;">Because String is primitive data type so the real/old string does not change , if we try to console the myName variable again then it will result <u>My name is Vansh</u> not with <u>Aggarwal</u></p>
+
+        <h2>Some Methods</h2>
+        <img  style="height: 100%; width: 100%;" src="stringimg/method.png" alt="">
+    <a href="index.html">Home page</a>
+    <script>
+        // 5 "STRING AND ITS METHODS"
+    //  const myName = 'My name is Vansh'
+// console.log(myName.charAt(5));
+// console.log(myName.charCodeAt(myName.length-1)); //return unicode
+// console.log(myName.charCodeAt(15));
+// console.log(myName.codePointAt(myName.length-1));
+
+/*
+charCodeAt() is UTF-16, codePointAt() is Unicode.
+
+charCodeAt() returns a number between 0 and 65535.
+
+Both methods return an integer representing the UTF-16 code of a character, but only codePointAt() can return the full value of a Unicode value greather 0xFFFF (65535).*/
+const myName = 'My name is Vansh'
+const surname = "Aggarwal"
+console.log(myName.concat(" ",surname));
+console.log(myName.endsWith("My ",3)); //returns true if the first three characters ends with my with a space, in simple only pass the string that ends .....
+console.log('endswith....returns true if the first three characters ends with my with a space, in simple only pass the string that ends .....');
+console.log(myName);
+console.log(myName.includes('is'));
+console.log(myName.indexOf("a"));
+console.log(myName.lastIndexOf('a'));
+console.log(myName.length);
+    </script>
+</body>
+</html>
