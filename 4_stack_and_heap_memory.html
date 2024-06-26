@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack and Heap</title>
+</head>
+<body>
+    <h1>JavaScript Engines Have Two Places to Store Data <br>
+    1) Stack <br>
+    2) Heap</h1>
+    <h2>* <u>Stack</u> : It is a data structure used to store static data. Static data refers to data whose size is known by the engine during compile time. <br>
+        In JavaScript, static data includes primitive values like strings, numbers, boolean, null, and undefined. References that point to objects and functions are also included. <br>
+        A fixed amount of memory is allocated for static data. This process is known as static memory allocation. </h2>
+    <img style="width: 100%; height: 100%;" src="heap_andstackpng/heapexp.png" alt="">
+    <hr>
+
+    <h2>* <u>Heap</u> : It is used to store objects and functions in JavaScript. The engine doesn’t allocate a fixed amount of memory. Instead, it allocates more space as required.</h2>
+    <p style="border: 1px solid black;"> Note: When you use a JavaScript object in a template literal (i.e., with backticks ``), JavaScript converts the object to a string using the object's toString method. <br>
+        For plain objects, this results in the string "[object Object]".
+
+        To print the object with its keys and values within a template literal, you can use JSON.stringify to convert the object to a JSON string representation:</p>
+
+   <img style="width: 100%; height: 100%;" src="heap_andstackpng/heapexp2.png" alt="">
+   <a href="index.html"><b>Home page</b></a>
+
+
+    <script>
+
+// STACK(PRIMITIVE DATE TYPE)
+// let x = "Vansh Aggarwal"
+// y = x
+// console.log(`value of x is given to y: ${y}`);
+// console.log("changing value of y will not effect the value of x as primitive data types are stored in the stack memory where the copy is given to another variable so...");
+// y = "aggarwal vansh"
+// console.log('value of x : ' , x);
+// console.log('value of y : ' ,y);
+
+// HEAP(NON-PRIMITIVE)
+let obj = {
+    username : "vansh",
+    age : 21,
+    surname : "aggarwal"
+}
+console.log(obj);
+newobj = obj
+// console.log(`value of newobj is same as obj ${obj}`);
+console.log(`Value of newobj is same as obj ${JSON.stringify(newobj)}`);
+console.log(newobj);
+newobj.age = 22
+console.log("changing the value of a key that is age to 22 through the newobj and it will change as non primitives are stored in the heap memory and the reference to the original is provided");
+console.log(obj);
+
+    </script>
+</body>
+</html>
